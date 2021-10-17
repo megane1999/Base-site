@@ -1,0 +1,83 @@
+@media screen and (min-width: $breakpoint-md){
+    
+    .complog{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .complog .competence{
+        padding-bottom: 18.75rem;
+    }
+
+    .complog ul li{
+        line-height: 2rem;
+    }
+
+}
+
+  
+  
+  
+  @media screen and (max-width: $breakpoint-xs){
+    .complog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 56.25rem;
+
+        font-size: 2rem;
+        
+    }
+
+    .complog ul li{
+        line-height: 5rem;
+    }
+ 
+    
+    .complog .competence{
+        padding-bottom: 10rem;
+    }
+  }
+  
+  @media screen and (min-width: $breakpoint-xs){
+
+    .complog ul li{
+        line-height: 5rem;
+    }
+    
+    .complog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 56.25rem;
+        font-size: 2rem;
+    }
+
+    .complog .competence{
+        padding-bottom: 10rem;
+    }
+
+ }
+
+    .complog .logiciel .text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+.complog ul{
+    list-style-type: none;
+    font-family: var(--font-secondary);
+}
+
+
+.complog .logiciel .text .languages{
+
+    text-align: right;
+}

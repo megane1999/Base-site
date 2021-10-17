@@ -1,0 +1,141 @@
+@media screen and (min-width: $breakpoint-md){
+    .contact{
+
+        background-image: url("/assets/images/contact.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 120rem;
+        height: auto;
+    }
+
+    .contact .contacts{ 
+
+        list-style-type: none;
+        font-family: var(--font-secondary);
+        display: flex;
+        flex-direction: column;
+       padding-top: 37.5rem;
+       
+    }
+
+    .contact .contacts .email{
+        margin-left: 21.5rem;
+        margin-top: 3.125rem;
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-xs){
+    .contact{
+        background-image: url("/assets/images/contact.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 56.25rem;
+        height: auto;
+
+ 
+    }
+
+    .contact .contacts{ 
+
+        list-style-type: none;
+        font-family: var(--font-secondary);
+        display: flex;
+        flex-direction: column;
+       
+       
+    }
+}
+
+@media screen and (min-width: $breakpoint-xs){
+    .contact{
+        background-image: url("/assets/images/contact.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 56.25rem;
+        height: auto;
+
+    }
+
+    .contact .contacts{ 
+
+        list-style-type: none;
+        font-family: var(--font-secondary);
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+
+.contact .contacts{ 
+
+    list-style-type: none;
+    font-family: var(--font-secondary);
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+.contact .contacts li{
+
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+.contact .contacts li img{
+
+    padding-right: 2.5rem;
+}
+
+.contact .CTA{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-left: 25rem;
+    margin-top: 6.25rem;
+}
+
+.contact .CTA a{
+
+    padding-top: 4.375rem;
+    padding-left: 1.875rem;
+
+}
+
+.contact .CTA a:hover{
+    text-decoration: none;
+}
+
+.contact .CTA a h2{
+    font-family: var(--font-secondary);
+}
+
+.contact .CTA .line{
+    border-bottom: 0.125rem solid var(--color-primary);
+    padding-bottom: 0.6rem;
+    width: 15.625rem;
+}
+
+.contact .media{
+
+    display: flex;
+    list-style-type: none;
+    justify-content:flex-end;
+    margin: 0;
+
+}
+
+.contact .media .linkedin{
+    padding-left: 6.25rem;
+    margin-right: 12.5rem;
+}

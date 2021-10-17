@@ -1,0 +1,82 @@
+@media screen and (min-width: $breakpoint-md){
+    .qui{
+        width: 64rem;
+        height: auto;
+        background-size: 66rem, auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    
+.qui .left{
+    padding-bottom: 22rem;
+    width: 50%;
+}
+}
+
+
+@media screen and (max-width: $breakpoint-xs){
+    .qui{
+        width: 56.25rem;
+        height: auto;
+        background-size: 32rem, auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    
+.qui .left{
+    padding-bottom: 10rem;
+    width: 50%;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+.qui .right{
+    font-size: 2rem;
+    line-height: 5rem;
+}
+}
+
+@media screen and (min-width: $breakpoint-xs){
+    .qui{
+        width: 56.25rem;
+        height: auto;
+        background-size: 62rem, auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .qui .right{
+        font-size: 2rem;
+        line-height: 5rem;
+    }
+
+    .qui .left{
+        padding-bottom: 10rem;
+        width: 50%;
+        font-size: 2rem;
+        line-height: 5rem;
+    }
+}
+
+.qui{
+
+    font-family: var(--font-secondary);
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+
+.qui .left p{
+    margin-top: 6.25rem;
+}
+
+.qui .right{
+    width: 50%;
+}

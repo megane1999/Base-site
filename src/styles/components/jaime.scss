@@ -1,0 +1,88 @@
+
+@media screen and (min-width: $breakpoint-md){
+  
+    .jaime ul{
+        list-style-type: none;
+        font-family: var(--font-secondary);
+        font-size: 1.6rem;
+        margin-top: 9.4rem;
+    
+    }
+
+    .gustave{
+        font-family: var(--font-secondary);
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-xs){
+
+
+    .gustave{
+        font-family: var(--font-secondary);
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .jaime{
+        width: 56.25rem;
+    }
+
+    .jaime ul{
+        font-size: 2rem;
+        list-style-type: none;
+        font-family: var(--font-secondary);
+        margin-top: 9.4rem;
+    }
+}
+
+@media screen and (min-width: $breakpoint-xs){
+
+    .gustave{
+        font-family: var(--font-secondary);
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .jaime{
+        width: 56.25rem;
+    }
+    
+    .jaime ul{
+        font-size: 2rem;
+        list-style-type: none;
+        font-family: var(--font-secondary);
+        margin-top: 9.4rem;
+    }
+}
+
+.jaime .imgjaime{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.jaime .jm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.jaime .jm li{
+    text-align: center;
+
+}
+
+.jaime .jm li img{
+    margin-top: 3.125rem;
+}
+
+
+
+.gustave p{
+    padding-top: 6.25rem;
+}

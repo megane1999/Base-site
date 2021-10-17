@@ -1,0 +1,28 @@
+/* ==========================================================================
+   LINKS / ELEMENTS
+   Style de base de tous les liens et bouton du site
+   ========================================================================== */
+
+a {
+    &:link {
+        color: var(--color-primary);
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: var(--color-primary);
+    }
+
+    &:hover {
+        color: var(--color-primary-darker);
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: var(--color-primary-darker);
+    }
+
+    &:focus {
+        color: var(--color-primary-darker);
+    }
+}
