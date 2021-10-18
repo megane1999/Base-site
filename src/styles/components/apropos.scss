@@ -1,63 +1,103 @@
-@media screen and (min-width: $breakpoint-md){
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl){
+
+  .apropos .titr{
+    width: 0;
+    height: 0;
+  }
   .apropos{
     width: 64rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
   }
 
   .apropos .selfie{
     width: 25rem;
     height: 25rem;
   }
-}
 
-
-@media screen and (max-width: $breakpoint-xs){
-  .apropos{
-    width: 50rem;
-  }
-  .apropos .selfie{
-    width: 20rem;
-    height: 20rem;
-  }
-
-  .apropos .CTA .arrow{
-    width: 9.375rem;
-    height: 6.563rem;
-  }
-}
-
-@media screen and (min-width: $breakpoint-xs){
-  .apropos{
-    width: 50rem;
-  }
-
-  .apropos .selfie{
-    width: 20rem;
-    height: 20rem;
-  }
-
-  .apropos .CTA .arrow{
-    width: 9.375rem;
-    height: 6.563rem;
-  }
-}
-
-
-.apropos{
-
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-
-
-}
-
-
+  
 .apropos .texte{
   width:54rem;
   font-family:var(--font-secondary);
   text-align: right;
   font-size: 1.5rem;
 }
+
+
+  
+.apropos .CTA a{
+
+  margin-top: 3.125rem;
+  margin-left: 3.125rem;
+}
+}
+
+
+@media screen and (min-width: $breakpoint-xs) and (max-width: 1023px){
+  .apropos{
+    width: 350px;
+    height: auto;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .apropos .enchantee{
+    width: 0;
+    height: 0;
+  }
+
+.apropos .texte{
+  font-family:var(--font-secondary);
+  text-align: center;
+  font-size: 1.2rem;
+
+}
+
+.apropos .titr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+  .apropos .selfie{
+    width: 0;
+    height: 0;
+  }
+
+  .apropos .self{
+    background-image: url("/assets/images/Selfie.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .apropos .CTA .arrow{
+    width: 0;
+    height: 0;
+  }
+
+  
+.apropos .CTA a{
+
+  margin-top: 3.125rem;
+  text-align: center;
+}
+
+
+
+.apropos .CTA a h2{
+  font-size: 2rem;
+}
+
+
+}
+
 
 .apropos .CTA{
   display: flex;
@@ -66,11 +106,6 @@
   align-items: center;
 }
 
-.apropos .CTA a{
-
-  margin-top: 3.125rem;
-  margin-left: 3.125rem;
-}
 
 .apropos .CTA a:hover{
   text-decoration: none;

@@ -1,27 +1,111 @@
-@media screen and (min-width: $breakpoint-md){
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl){
+
+    .hero ul .first{
+        padding: 0;
+    }
+    .hero ul li{
+        padding-left: 3rem;
+        color: var(--color-primary);
+    }
+
     .hero{
         width: 64rem;
         height: auto;
         background-size: 66rem, auto;
     }
-}
 
-
-@media screen and (max-width: $breakpoint-xs){
-    .hero{
-        width: 30rem;
-        height: auto;
-        background-size: 32rem, auto;
+    .hero ul{
+        font-size: 1.5rem;
+        letter-spacing: 0.3rem;
     }
+
+    .hero h1{
+        margin: 6.25rem;
+    }
+    
+    .hero .cta .swoosh{
+        margin-top: 4rem;
+        padding-right: 1.25rem;
+        width: 21rem;
+        height: 11.5rem;
+    }
+
+    .hero .cta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -18.75rem;
+    }
+
+    
+.hero .cta .squiggle{
+
+    width: 4rem;
+    height: 6.5rem;
 }
 
-@media screen and (min-width: $breakpoint-xs){
-    .hero{
-        width: 60rem;
-        height: auto;
-        background-size: 62rem, auto;
-    }
 }
+
+
+@media screen and (min-width: $breakpoint-xs) and (max-width: 1023px){
+    .hero ul li{
+       padding-left: 0.1rem;
+        color: var(--color-primary);
+    }
+
+    .first{
+        padding-left: 0.2rem;
+    }
+
+    .hero a h2{
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+    }
+    .hero{
+        width: $breakpoint-xs;
+        height: auto;
+        
+        background-size: $breakpoint-xs, auto;
+    }
+
+    .hero ul{
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+        margin:0;
+        width: 375px;
+    }
+
+    .hero h1{
+        font-size: 1.8rem;
+        margin: 4rem;
+    }
+
+    .hero .cta .swoosh{
+        margin-top: 4rem;
+        width: 6rem;
+        height: 3rem;
+        padding-right: 10px;
+    }
+
+
+    .hero .cta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    
+.hero .cta .squiggle{
+
+    width: 3rem;
+    height: 5.5rem;
+}
+}
+
 
 .hero{
     display: flex;
@@ -32,9 +116,6 @@
     background-repeat: no-repeat;
 }
 
-.hero h1{
-    margin: 6.25rem;
-}
 
 
 .hero ul{
@@ -46,18 +127,12 @@
     align-content: center;
     align-items: center;
     padding: 0;
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
+
 }
 
-.hero ul li{
-    padding-left: 3rem;
-    color: var(--color-primary);
-}
 
-.hero ul .first{
-    padding: 0;
-}
+
+
 
 .hero a{
     text-decoration: none;
@@ -74,22 +149,6 @@
     padding-bottom: 0.6rem;
 }
 
-.hero .cta{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left: -18.75rem;
-}
 
-.hero .cta .swoosh{
-    margin-top: 4rem;
-    padding-right: 1.25rem;
-    width: 21rem;
-    height: 11.5rem;
-}
 
-.hero .cta .squiggle{
 
-    width: 4rem;
-    height: 6.5rem;
-}

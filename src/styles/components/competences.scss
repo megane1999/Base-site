@@ -1,4 +1,4 @@
-@media screen and (min-width: $breakpoint-md){
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl){
     
     .complog{
         display: flex;
@@ -15,20 +15,28 @@
         line-height: 2rem;
     }
 
+    .complog .logiciel .text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 }
 
   
   
   
-  @media screen and (max-width: $breakpoint-xs){
+  @media screen and (min-width: $breakpoint-xs) and (max-width: 1023px){
     .complog{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 56.25rem;
+        width: 300px;
+        margin-top: 100px;
 
-        font-size: 2rem;
+        font-size: 1.2rem;
         
     }
 
@@ -40,36 +48,21 @@
     .complog .competence{
         padding-bottom: 10rem;
     }
-  }
-  
-  @media screen and (min-width: $breakpoint-xs){
-
-    .complog ul li{
-        line-height: 5rem;
-    }
-    
-    .complog{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        width: 56.25rem;
-        font-size: 2rem;
-    }
-
-    .complog .competence{
-        padding-bottom: 10rem;
-    }
-
- }
 
     .complog .logiciel .text{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: column;
     }
+
+    .complog .logiciel .text .languages{
+        padding-right: 40px;
+        padding-left: 0;
+    }
+  }
+  
+
+
+
 
 .complog ul{
     list-style-type: none;

@@ -1,4 +1,4 @@
-@media screen and (min-width: $breakpoint-md){
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl){
     .qui{
         width: 64rem;
         height: auto;
@@ -14,14 +14,19 @@
     padding-bottom: 22rem;
     width: 50%;
 }
+
+
+.qui .right{
+    text-align:right;
+    width: 50%;
+}
 }
 
 
-@media screen and (max-width: $breakpoint-xs){
+@media screen and (min-width: $breakpoint-xs) and (max-width: 1023px){
     .qui{
-        width: 56.25rem;
+        width: 300px;
         height: auto;
-        background-size: 32rem, auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -31,38 +36,17 @@
     
 .qui .left{
     padding-bottom: 10rem;
-    width: 50%;
-    font-size: 2rem;
-    line-height: 5rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    text-align: center;
 }
 
 .qui .right{
-    font-size: 2rem;
-    line-height: 5rem;
-}
+    font-size: 1.2rem;
+    line-height: 3rem;
+    text-align: center;
 }
 
-@media screen and (min-width: $breakpoint-xs){
-    .qui{
-        width: 56.25rem;
-        height: auto;
-        background-size: 62rem, auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .qui .right{
-        font-size: 2rem;
-        line-height: 5rem;
-    }
-
-    .qui .left{
-        padding-bottom: 10rem;
-        width: 50%;
-        font-size: 2rem;
-        line-height: 5rem;
-    }
 }
 
 .qui{
@@ -77,6 +61,3 @@
     margin-top: 6.25rem;
 }
 
-.qui .right{
-    width: 50%;
-}

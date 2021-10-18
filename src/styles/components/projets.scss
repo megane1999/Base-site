@@ -1,4 +1,4 @@
-@media screen and (min-width: $breakpoint-md){
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl){
 
     .projets .cta .line2{
         border-bottom: 0.125rem solid var(--color-primary);
@@ -36,50 +36,7 @@
 }
 
 
-@media screen and (max-width: $breakpoint-xs){
-
-    .projets .cta .line2{
-        border-bottom: 0.125rem solid var(--color-primary);
-        padding-bottom: 0.6rem;
-        width: 20rem;
-        margin-bottom: 6.25rem;
-    }
-
-    .projets .projet1 .text h3{
-        padding-bottom: 1.8rem;
-        letter-spacing: 0.1rem;
-        font-size: 1.7rem;
-    }
-
-    .menu{
-        height: 5rem;
-        display: flex;
-       justify-content: space-around;
-       align-items: center;
-    }
-
-    .projets .cta img{
-        width: 0;
-        height: 0;
-    }
-
-
-
-    .projets .cta{
-
-        display: flex;
-        flex-direction: row;
-    
-    }
-
-    .projets{
-        width: auto;
-    }
-
-    
-}
-
-@media screen and (min-width: $breakpoint-xs){
+@media screen and (min-width: $breakpoint-xs) and (max-width: 1023px){
 
     
     .projets .cta .line2{

@@ -1,4 +1,34 @@
-@media screen and (min-width: $breakpoint-md){
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl){
+
+    .contact .media{
+
+        display: flex;
+        list-style-type: none;
+        justify-content:flex-end;
+        margin: 0;
+    
+    }
+
+    .contact .media .linkedin{
+        padding-left: 6.25rem;
+        margin-right: 12.5rem;
+    }
+
+    .contact .CTA .line{
+        border-bottom: 0.125rem solid var(--color-primary);
+        padding-bottom: 0.6rem;
+        width: 15.625rem;
+    }
+
+    .contact .CTA{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        margin-left: 25rem;
+        margin-top: 6.25rem;
+    }
+
     .contact{
 
         background-image: url("/assets/images/contact.png");
@@ -14,6 +44,27 @@
         font-family: var(--font-secondary);
         display: flex;
         flex-direction: column;
+       
+    }
+    .contact .contacts li{
+
+
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    
+    }
+    
+
+    .contact .contacts{ 
+
+        list-style-type: none;
+        font-family: var(--font-secondary);
+        display: flex;
+        flex-direction: column;
        padding-top: 37.5rem;
        
     }
@@ -22,95 +73,119 @@
         margin-left: 21.5rem;
         margin-top: 3.125rem;
     }
-}
 
+    .contact .contacts li img{
 
-@media screen and (max-width: $breakpoint-xs){
-    .contact{
-        background-image: url("/assets/images/contact.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 56.25rem;
-        height: auto;
-
- 
+        padding-right: 2.5rem;
     }
 
-    .contact .contacts{ 
-
-        list-style-type: none;
-        font-family: var(--font-secondary);
-        display: flex;
-        flex-direction: column;
-       
-       
-    }
-}
-
-@media screen and (min-width: $breakpoint-xs){
-    .contact{
-        background-image: url("/assets/images/contact.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 56.25rem;
-        height: auto;
-
-    }
-
-    .contact .contacts{ 
-
-        list-style-type: none;
-        font-family: var(--font-secondary);
-        display: flex;
-        flex-direction: column;
-        
-    }
-}
-
-
-.contact .contacts{ 
-
-    list-style-type: none;
-    font-family: var(--font-secondary);
-    display: flex;
-    flex-direction: column;
-   
-}
-
-
-
-.contact .contacts li{
-
-
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-
-}
-
-.contact .contacts li img{
-
-    padding-right: 2.5rem;
-}
-
-.contact .CTA{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    margin-left: 25rem;
-    margin-top: 6.25rem;
-}
-
+    
 .contact .CTA a{
 
     padding-top: 4.375rem;
     padding-left: 1.875rem;
 
 }
+
+
+}
+
+
+
+@media screen and (min-width: $breakpoint-xs) and (max-width: 1023px){
+
+    .contact .media .linkedin{
+        margin-right: 10px;
+        margin-left: 50px;
+    }
+
+    .contact .media{
+
+    display: flex;
+    list-style-type: none;
+    justify-content:flex-end;
+    margin-top: 50px;
+
+}
+
+    .contact .CTA .line{
+        border-bottom: 0.125rem solid var(--color-primary);
+        padding-bottom: 0.6rem;
+        width: 14rem;
+    }
+
+    .contact .CTA{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .contact .CTA img{
+        width: 70px;
+        height: 50px;
+    }
+
+    .contact .contacts li{
+
+
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        padding-bottom: 20px;
+        align-items: center;
+        font-size: 1.1rem;
+    
+    }
+
+    .contact .contacts li img{
+
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .contact{
+        width: $breakpoint-xs;
+        height: auto;
+
+    }
+
+    .contact .bg{
+        background-image: url("/assets/images/contact2.png");
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .contact .contacts{ 
+
+        list-style-type: none;
+        font-family: var(--font-secondary);
+        display: flex;
+        flex-direction: column;
+        padding-top: 300px;
+        width: 350px;
+        padding-left: 0;
+        
+    }
+
+    
+.contact .CTA a{
+
+    padding-top: 1rem;
+    padding-left: 1.875rem;
+
+}
+
+.contact .CTA a h2{
+    font-size: 1.5rem;
+}
+
+}
+
 
 .contact .CTA a:hover{
     text-decoration: none;
@@ -120,22 +195,5 @@
     font-family: var(--font-secondary);
 }
 
-.contact .CTA .line{
-    border-bottom: 0.125rem solid var(--color-primary);
-    padding-bottom: 0.6rem;
-    width: 15.625rem;
-}
 
-.contact .media{
 
-    display: flex;
-    list-style-type: none;
-    justify-content:flex-end;
-    margin: 0;
-
-}
-
-.contact .media .linkedin{
-    padding-left: 6.25rem;
-    margin-right: 12.5rem;
-}
